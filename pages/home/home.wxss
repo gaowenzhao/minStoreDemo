@@ -57,6 +57,10 @@
     padding: 10rpx;
     padding-top: 20rpx;
     color: #aaaaaa;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
 }
 .tabBarList .active{
     color: black;
@@ -66,8 +70,8 @@
     height: 10rpx;
     background: #C6847E;
     content: "";
-    display: block;
-    margin-left: 20rpx;
+   /* display: block;
+    margin-left: 20rpx;*/
     margin-top: 10rpx;
     border-radius: 50rpx;
 }

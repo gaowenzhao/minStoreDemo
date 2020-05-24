@@ -10,7 +10,7 @@
     <!--tabBar-->
     <view class="tabBarList" bindtap="selectTab">
         <view id="{{index}}" wx:for="{{tabList}}" wx:key="index" class="tabBarItem {{index==selectIndex?'active':''}}">
-            {{item.name}}
+           <text>{{item.name}}</text>
         </view>
     </view>
     <view class="bannerContainer">
