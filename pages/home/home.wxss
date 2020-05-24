@@ -9,6 +9,7 @@
     justify-items: center;
     box-sizing: border-box;
     padding: 50rpx;
+    padding-top: 10rpx;
     padding-bottom: 40rpx;
     background: white;
 }
@@ -96,7 +97,7 @@
     width: 10rpx;
     height:10rpx;
     border-radius: 50%;
-    background: antiquewhite;
+    background: #f5f5f5;
     transition: all linear 0.5s;
 }
 .dots-container .dot-item-active{
