@@ -1,0 +1,8 @@
+<!--miniprogram/pages/teacher-list/teacher-list.wxml-->
+
+<teacherDesc-item/>
+<teacherDesc-item/>
+<teacherDesc-item/>
+<teacherDesc-item/>
+<teacherDesc-item/>
+<teacherDesc-item/>

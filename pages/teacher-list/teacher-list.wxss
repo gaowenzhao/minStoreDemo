@@ -1,0 +1,24 @@
+/* miniprogram/pages/teacher-list/teacher-list.wxss */
+.itemContain{
+  display: flex;
+  border-bottom: 5px solid red;
+  padding: 10px;
+}
+.itemContain .left{
+  width: 120px;
+  height: 80px;
+  background-color: aqua;
+}
+.itemContain .left image{
+  width: 120px;
+  height: 80px;
+}
+.itemContain .right{
+ padding-left: 10px;
+ padding-right: 10px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color:orange;
+}

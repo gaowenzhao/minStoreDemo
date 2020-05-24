@@ -1,0 +1,39 @@
+<view>
+    <swiper class="swiper" autoplay="{{true}}" interval="{{5000}}" indicator-dots="{{true}}"
+            indicator-active-color="white">
+        <swiper-item wx:for="{{imageList}}" wx:key="index">
+            <image class="headImage" src="{{item}}"></image>
+        </swiper-item>
+    </swiper>
+    <!--  <image class="activitybottomImg" src="/assets/images/activitybottom.png"/>-->
+    <view class="activitybottomImg">
+        <view>
+            <image class="logoimg" src="/assets/images/favouritelogo.png"/>
+            <text class="pintuantext">拼团价</text>
+        </view>
+        <text class="counttime">距结束仅剩 18 : 20 : 30</text>
+    </view>
+    <text class="unit textspace">拼团价￥</text>
+    <text class="unit number">79</text>
+    <text class="unit">.90</text>
+
+    <view class="bottomBar">
+        <view class="tablist">
+            <view class="tabitem">
+                <icon class="iconfont icon-icons-"/>
+                首页
+            </view>
+            <view class="tabitem">
+                <icon class="iconfont icon-service"/>
+                客服
+            </view>
+            <view class="tabitem">
+                <icon class="iconfont icon-cart"/>
+                购物车
+            </view>
+        </view>
+       <button type="primary" class="lookbutton">
+           查看店铺其他商品1
+       </button>
+    </view>
+</view>

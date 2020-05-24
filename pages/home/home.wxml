@@ -1,0 +1,44 @@
+<view class="container">
+    <view class="searchBar">
+        <view class="search-input">
+          <icon type="search" size="40rpx"/>
+          <text>请输入你的商品名称或者店铺</text>
+        </view>
+        <icon class="iconfont icon-message icon-message-style" />
+    </view>
+
+    <!--tabBar-->
+    <view class="tabBarList" bindtap="selectTab">
+        <view id="{{index}}" wx:for="{{tabList}}" wx:key="index" class="tabBarItem {{index==selectIndex?'active':''}}">
+            {{item.name}}
+        </view>
+    </view>
+    <view class="bannerContainer">
+        <swiper current="{{bannerSelect}}" bindchange="swiperChange" class="swiper-container" autoplay interval="{{5000}}" duration="{{300}}" circular>
+            <swiper-item wx:for="{{imageList}}" wx:key="*this">
+                <image class="bannerImg" src="{{item}}" mode="widthFix"/>
+            </swiper-item>
+        </swiper>
+        <view class="dots-container">
+            <view class="dot-item {{bannerSelect==index?'dot-item-active':''}}" wx:for="{{imageList}}" wx:key="index"></view>
+        </view>
+
+    </view>
+    <view class="productList">
+        <view class="productItem" wx:for="{{productList}}" wx:key="id">
+            <image class="cover" src="{{item.banner}}" mode="widthFix"/>
+            <view class="content">
+                <text class="text-desc">{{item.articleTitle}}</text>
+                <view class="product-bottom">
+                    <view class="user">
+                        <image class="avatar" src="{{item.authorVO.avatarUrl}}" mode="aspectFit"/>
+                        <text style="margin-left:10rpx">{{item.authorVO.nickName}}</text>
+                    </view>
+                    <view>
+                        {{item.likeCount}}
+                    </view>
+                </view>
+            </view>
+        </view>
+    </view>
+</view>

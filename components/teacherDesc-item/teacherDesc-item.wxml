@@ -1,0 +1,10 @@
+<view class="itemContain {{isStart?'isStart':''}}">
+	<view class="left">
+		<image src="/assets/images/logo.png" />
+	</view>
+	<view class="right">
+		<text>python-玩转微信系列</text>
+		<text>python-玩转微信系列</text>
+		<text>python-玩转微信系列</text>
+	</view>
+</view>

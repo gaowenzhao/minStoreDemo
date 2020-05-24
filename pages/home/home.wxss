@@ -1,0 +1,158 @@
+/* miniprogram/pages/home/home.wxss */
+.container{
+   background: #f5f5f5;
+}
+.searchBar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    justify-items: center;
+    box-sizing: border-box;
+    padding: 50rpx;
+    padding-bottom: 40rpx;
+    background: white;
+}
+
+.searchBar .search-input {
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    width: 580rpx;
+    background: #F6F6F6;
+    height: 80rpx;
+    border-radius: 40rpx;
+}
+
+.searchBar .search-input icon {
+    size: 10rpx;
+}
+
+.searchBar .search-input text {
+    font-size: 28rpx;
+    color: #AAAAAA;
+    margin-left: 10rpx;
+}
+
+.searchBar .icon-message-style {
+    font-size: 45rpx;
+}
+
+.tabBarList {
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
+    padding-left: 50rpx;
+    padding-right: 50rpx;
+    background: white;
+}
+
+.tabBarList .tabBarItem {
+    height: 100rpx;
+    line-height: 41rpx;
+    box-sizing: border-box;
+    padding: 10rpx;
+    padding-top: 20rpx;
+    color: #aaaaaa;
+}
+.tabBarList .active{
+    color: black;
+}
+.tabBarList .active::after{
+    width: 30rpx;
+    height: 10rpx;
+    background: #C6847E;
+    content: "";
+    display: block;
+    margin-left: 20rpx;
+    margin-top: 10rpx;
+    border-radius: 50rpx;
+}
+.bannerContainer{
+    background: white;
+}
+.swiper-container{
+    width: 700rpx;
+    margin: 0 auto;
+    height: 290rpx;
+}
+.swiper-container .bannerImg{
+    width: 100%;
+    border-radius: 10rpx;
+}
+.dots-container{
+    display: flex;
+    width: 100rpx;
+    height:30rpx;
+    margin: 0 auto;
+    justify-content: space-between;
+    box-sizing: border-box;
+    align-items: center;
+    justify-items: center;
+}
+.dots-container .dot-item{
+    width: 10rpx;
+    height:10rpx;
+    border-radius: 50%;
+    background: antiquewhite;
+    transition: all linear 0.5s;
+}
+.dots-container .dot-item-active{
+    background: red;
+    width: 20rpx;
+}
+.productList{
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    justify-content: space-between;
+    padding-left: 18rpx;
+    padding-right: 18rpx;
+}
+.productList .productItem{
+    width: 350rpx;
+    box-sizing: border-box;
+    background: white;
+    border-radius: 10rpx;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20rpx;
+}
+.productList .productItem .content{
+    box-sizing: border-box;
+    padding: 20rpx;
+    width: 100%;
+}
+.productList .productItem .content .text-desc{
+    overflow:hidden;
+    text-overflow:ellipsis;
+    display:-webkit-box;
+    -webkit-box-orient:vertical;
+    -webkit-line-clamp:2;
+    font-size: 28rpx;
+}
+.productList .productItem .cover{
+    width: 100%;
+    border-top-left-radius: 10rpx;
+    border-top-right-radius: 10rpx;
+}
+
+.productList .productItem .content .product-bottom{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15rpx;
+    font-size: 25rpx;
+}
+.productList .productItem .product-bottom .user{
+    font-size: 25rpx;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+}
+.avatar{
+    width: 30rpx;
+    height: 30rpx;
+    border-radius: 50%;
+}

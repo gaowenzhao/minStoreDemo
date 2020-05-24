@@ -1,0 +1,5 @@
+<!--components/teacher-item.wxml-->
+<view class="imgcontainer">
+	<image class="img" src="/assets/images/logo.png"/>
+	<text>hahah</text>
+</view>
